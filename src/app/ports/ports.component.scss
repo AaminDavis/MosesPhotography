@@ -1,0 +1,152 @@
+div#maincont {
+  h2 {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-left: 20%;
+  }
+
+  P {
+    color: #000;
+    background-color: #fff;
+    width: 30px;
+    border-radius: 7px;
+    margin-left: 15px;
+    padding: 0 10px;
+  }
+
+  section {
+    padding: 0;
+    margin: 0;
+  }
+
+  div.sidenav {
+    margin: auto;
+    padding: auto;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    height: 50vh;
+    justify-content: space-between;
+    position: fixed;
+    transform: translatey(-50%);
+
+    a {
+      color: #fff;
+      padding: .8rem 1rem;
+      writing-mode: vertical-lr;
+      text-orientation: upright;
+      font-weight: 100;
+      font-size: .875rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+  }
+
+  div.firstimg {
+    background-image: url("/assets/images/IMG_9783-505.jpg");
+    height: 80vh;
+    width: 80%;
+    background-size: cover;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    float: right;
+    margin-bottom: 5rem;
+
+    >p {
+      position: absolute;
+      bottom: 10;
+      left: 10;
+    }
+  }
+
+  .firstimg::after {
+    content: "Yeah";
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    top: 97%;
+    left: 50%;
+    transform: scale(10);
+    z-index: 5454545;
+    background-size: cover;
+    //mix-blend-mode: difference;
+    mix-blend-mode: soft-light;
+  }
+
+  div.twoimgs {
+    padding-left: 20%;
+    margin-bottom: 5rem;
+    height: 110vh;
+    clear: both;
+    display: flex;
+    justify-content: space-between;
+
+
+    .one {
+      background-image: url("/assets/images/IMG_9750-303.jpg");
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+      height: 50vh;
+      width: 40%;
+      align-self: flex-start;
+
+      >p.num2 {
+        position: absolute;
+        bottom: 10;
+        left: 10;
+      }
+    }
+
+    div.one::after {
+      content: "Yeah";
+      display: inline-block;
+      position: relative; 
+      color: green;
+      top: 97%;
+      left: 50%;
+      transform: scale(10);
+      background-size: contain;
+      mix-blend-mode: difference;
+    }
+
+    .two {
+      background-image: url("/assets/images/IMG_5888-101.jpg");
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+      height: 50vh;
+      width: 40%;
+      align-self: flex-end;
+
+      >p.num3 {
+        position: absolute;
+        bottom: 5;
+        left: 10;
+      }
+    }
+  }
+
+  div.lastimg {
+    background-image: url("/assets/images/IMG_9782-404.jpg");
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    >p.num4 {
+      position: absolute;
+      bottom: 10;
+      left: 10;
+    }
+  }
+}

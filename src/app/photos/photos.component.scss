@@ -1,0 +1,93 @@
+div.container2 {
+  a.capts {
+    color: #000;
+    padding: 1em 1.3em;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 auto;
+
+    &:hover {
+      text-decoration: underline;
+      color: #fff;
+    }
+
+    &:nth-child(n) {
+      margin-right: 1rem;
+    }
+  }
+  div#img {
+    .portriats,
+    .stills,
+    .favs {
+      margin-bottom: 1.3rem;
+    }
+
+    img {
+      background-image: contain;
+      border-radius: 20px;
+      padding-left: .2em;
+      padding-bottom: .2em;
+
+      /*
+      &.square {
+        height: auto;
+        max-height: 500px;
+        width: auto;
+        max-width: 500px;
+      }
+
+      &.rect {
+        height: auto;
+        width: 500px;
+      }
+
+      &.full {
+        height: auto;
+        max-height: 100%;
+        width: auto;
+        max-width: 100%;
+      }*/
+    }
+  }
+}
+
+@media (min-width: 0px) {
+  img {
+    height: auto;
+    max-height: 100%;
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  div.container2 {
+    margin: 0;
+    padding: 0;
+
+    div#img {
+      display: flex;
+      justify-content: space-between;
+
+    .portriats,
+    .stills,
+    .favs {
+      margin-bottom: 1.3rem;
+      min-height: 400px;
+      width: 30vw; 
+    }
+    }
+
+    /*a > .favs {
+      align-self: end;
+    }*/
+
+    img {
+      background-image: cover;
+      padding-left: 0;
+      min-height: 400px;
+      width: 30vw;
+    }
+  }
+}

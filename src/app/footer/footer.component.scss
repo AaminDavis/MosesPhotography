@@ -1,0 +1,22 @@
+div.container1 {
+  margin-top: 1em;
+  width: 100%;
+
+  /* Make the footer elements inline/justiffied to their repective positions */
+  footer {
+    background: #7700ff;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+
+    .copyright {
+      font-weight: bold;
+      color: white;
+    }
+
+    .socialmedias {
+      font-weight: bold;
+      color: white;
+    }
+  }
+}

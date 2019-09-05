@@ -1,0 +1,151 @@
+// For Screen Sizes less  than 425px
+Section {
+  background-image: url("/assets/images/IMG_9782-404.jpg");
+  background-position: left;
+  background-color: transparent;
+  border-radius: 20px;
+  background-size: cover;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+
+  div {
+    vertical-align: middle;
+
+    form {
+      z-index: 5;
+      width: auto;
+      min-width: 40%;
+      height: auto;
+      padding: 1.5rem;
+
+      h1 {
+        color: white;
+        margin-top: .5rem;
+        padding-bottom: 2rem;
+        font-size: 2.6rem;
+        font-weight: bold;
+      }
+
+      label {
+        display: block;
+        color: white;
+
+
+        input {
+          width: 70%;
+        }
+
+        textarea {
+          width: 70%;
+          min-height: 100px;
+        }
+
+        input,
+        textarea {
+          display: block;
+          line-height: 24px;
+          font-size: 1rem;
+          margin-top: .5rem;
+          margin-bottom: 20px;
+          border-radius: 4px;
+          padding: .5rem 0rem .5rem .5rem;
+          border: 2px solid inherit;
+
+          &:disabled {
+            opacity: 50%;
+          }
+
+          &:active,
+          &:focus {
+            border: 2px solid #7700FF;
+          }
+
+          &:hover {
+            border: 2px solid green;
+          }
+
+          &:inactive {
+            border: 2px solid #000;
+          }
+        }
+
+        .error {
+          margin-top: -20px;
+          background: yellow;
+          padding: .5rem;
+          display: inline-block;
+          font-size: .9rem;
+          margin-bottom: 20px;
+        }
+
+        >div {
+          color: black;
+        }
+      }
+
+      .cta {
+        background-color: transparent;
+        border: 2px solid #7700FF;
+        line-height: 24px;
+        font-weight: bold;
+        color: #fff;
+
+        text-transform: uppercase;
+        border-radius: 10px;
+        padding: .5rem 1rem;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #7700FF;
+        }
+      }
+
+      .result {
+        margin-top: 50px;
+
+        strong {
+          display: block;
+        }
+
+        span {
+          margin-bottom: 20px;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+//Fix the height of the form/div
+
+@media (min-width: 768px) {
+  section {
+    height: 75vh;
+    width: 90%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    div {
+      display: block;
+      form {
+        margin: auto 0rem;
+        float: right;
+        //transform: scale(.9);
+
+        h1 {
+          margin-top: 0rem;
+        }
+
+        label {
+
+          .cta {
+            padding: .75rem 1.25rem;
+          }
+        }
+      }
+    }
+  }
+}

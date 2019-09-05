@@ -1,0 +1,47 @@
+<section>
+  <div>
+    <!-- Choose to eiter use ngModel or formControlName b/c use of both is deprecated now and only allowed in Angualr V.6-->
+    <form netlify [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <h1>Get in touch</h1>
+
+      <h5 *ngIf="success">Your form is valid!</h5>
+  
+      <label>
+        Name:
+        <input type="text" formControlName="name" placeholder="Full Name" aria-placeholder="Full Name">
+        <div *ngIf="submitted && contactForm.controls.name.errors" class="error">
+          <div *ngIf="contactForm.controls.name.errors.required">Your name is required</div>
+        </div>
+      </label>
+
+      <label>
+          Email:
+          <input type="email" formControlName="email" ngModel [email]="true" placeholder="demo@gmail.com" aria-placeholder="demo@gmail.com">
+          <div *ngIf="submitted && contactForm.controls.email.errors" class="error">
+            <div *ngIf="contactForm.controls.email.errors.required">Your email is required</div>
+            <div *ngIf="contactForm.controls.email.errors.email">Make sure your email is correct</div>
+          </div>
+        </label>
+    
+      <label>
+        Message:
+        <textarea formControlName="message" ngModel maxlength="500" placeholder="Message" aria-placeholder="Message"></textarea>
+        <div *ngIf="submitted && contactForm.controls.message.errors" class="error">
+          <div *ngIf="contactForm.controls.message.errors.required">A message is required</div>
+          <div *ngIf="contactForm.controls.message.errors.maxLength">Is message is at max length</div>
+        </div>
+      </label>
+  
+      <input type="submit" value="Send" class="cta">
+    
+    </form>
+  
+    <!--<div *ngIf="submitted" class="results">
+      <strong>Name:</strong> 
+      <span>{{ messageForm.controls.name.value }}</span>
+  
+      <strong>Message:</strong> 
+      <span>{{ messageForm.controls.message.value }}</span>
+    </div>-->
+  </div>
+</section>
