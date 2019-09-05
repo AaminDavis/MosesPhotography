@@ -64,7 +64,7 @@ div#maincont {
       left: 10;
     }
   }
-
+/*
   .firstimg::after {
     content: "Yeah";
     display: inline-block;
@@ -78,7 +78,7 @@ div#maincont {
     //mix-blend-mode: difference;
     mix-blend-mode: soft-light;
   }
-
+*/
   div.twoimgs {
     padding-left: 20%;
     margin-bottom: 5rem;
@@ -103,7 +103,7 @@ div#maincont {
         left: 10;
       }
     }
-
+/*
     div.one::after {
       content: "Yeah";
       display: inline-block;
@@ -115,7 +115,7 @@ div#maincont {
       background-size: contain;
       mix-blend-mode: difference;
     }
-
+*/
     .two {
       background-image: url("/assets/images/IMG_5888-101.jpg");
       background-size: cover;
