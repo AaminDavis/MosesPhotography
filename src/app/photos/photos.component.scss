@@ -16,7 +16,9 @@ div.container2 {
       margin-right: 1rem;
     }
   }
+
   div#img {
+
     .portriats,
     .stills,
     .favs {
@@ -50,13 +52,13 @@ div.container2 {
       display: flex;
       justify-content: space-between;
 
-    .portriats,
-    .stills,
-    .favs {
-      margin-bottom: 1.3rem;
-      min-height: 400px;
-      width: 30vw; 
-    }
+      .portriats,
+      .stills,
+      .favs {
+        margin-bottom: 1.3rem;
+        min-height: 400px;
+        width: 30vw;
+      }
     }
 
     img {
