@@ -18,7 +18,6 @@ div.landing {
         h1 {
           font-weight: bold;
           color: white;
-          //color: #AF0CE8; 
           font-size: 2rem;
         }
 
@@ -29,14 +28,11 @@ div.landing {
 
         button {
           background: rgb(233, 171, 233);
-          // rgb(233, 171, 233) = #E9ABE9
           color: black;
           padding: 1.1em;
           margin: 0;
           border: none;
           border-radius: 10px;
-          // rgba(167, 102, 167) = #A866A7
-          //background-blend-mode: multiply;
 
           &:hover,
           &:focus {

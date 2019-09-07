@@ -28,26 +28,6 @@ div.container2 {
       border-radius: 20px;
       padding-left: .2em;
       padding-bottom: .2em;
-
-      /*
-      &.square {
-        height: auto;
-        max-height: 500px;
-        width: auto;
-        max-width: 500px;
-      }
-
-      &.rect {
-        height: auto;
-        width: 500px;
-      }
-
-      &.full {
-        height: auto;
-        max-height: 100%;
-        width: auto;
-        max-width: 100%;
-      }*/
     }
   }
 }
@@ -78,10 +58,6 @@ div.container2 {
       width: 30vw; 
     }
     }
-
-    /*a > .favs {
-      align-self: end;
-    }*/
 
     img {
       background-image: cover;
