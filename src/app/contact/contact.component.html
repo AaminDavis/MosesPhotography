@@ -1,7 +1,7 @@
 <section>
   <div>
     <!-- Choose to eiter use ngModel or formControlName b/c use of both is deprecated now and only allowed in Angualr V.6-->
-    <form netlify [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <form netlify method="POST" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
       <h1>Get in touch</h1>
 
       <h5 *ngIf="success">Your form is valid!</h5>
