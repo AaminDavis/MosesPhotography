@@ -25,10 +25,9 @@
     
       <label>
         Message:
-        <textarea formControlName="message" ngModel maxlength="500" placeholder="Message" aria-placeholder="Message"></textarea>
+        <textarea formControlName="message" placeholder="Message" aria-placeholder="Message"></textarea>
         <div *ngIf="submitted && contactForm.controls.message.errors" class="error">
           <div *ngIf="contactForm.controls.message.errors.required">A message is required</div>
-          <div *ngIf="contactForm.controls.message.errors.maxLength">Is message is at max length</div>
         </div>
       </label>
   
