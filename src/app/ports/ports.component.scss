@@ -1,8 +1,8 @@
 div#maincont {
   h2 {
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: bold;
-    margin-left: 20%;
+    //margin-left: 20%;
   }
 
   P {
@@ -25,18 +25,17 @@ div#maincont {
     float: left;
     display: flex;
     flex-direction: column;
-    margin: 2rem;
     height: 50vh;
     justify-content: space-between;
     position: fixed;
-    transform: translatey(-50%);
+    transform: translatey(-70%);
 
     a {
       color: #fff;
-      padding: .8rem 1rem;
+      padding: .8rem .8rem;
       writing-mode: vertical-lr;
       text-orientation: upright;
-      font-weight: 100;
+      font-weight: bold;
       font-size: .875rem;
 
       &:hover {
@@ -49,7 +48,7 @@ div#maincont {
   div.firstimg {
     background-image: url("/assets/images/IMG_9783-505.jpg");
     height: 80vh;
-    width: 80%;
+    width: 100%;
     background-size: cover;
     border-radius: 10px;
     background-repeat: no-repeat;
@@ -82,10 +81,9 @@ div#maincont {
   div.twoimgs {
     padding-left: 20%;
     margin-bottom: 5rem;
-    height: 110vh;
-    clear: both;
-    display: flex;
-    justify-content: space-between;
+    height: auto;
+    display: flexbox;
+    overflow: hidden;
 
 
     .one {
@@ -94,8 +92,9 @@ div#maincont {
       background-position: center;
       border-radius: 10px;
       height: 50vh;
-      width: 40%;
+      width: 100vw;
       align-self: flex-start;
+      margin-bottom: 5rem;
 
       >p.num2 {
         position: absolute;
@@ -122,7 +121,7 @@ div#maincont {
       background-position: center;
       border-radius: 10px;
       height: 50vh;
-      width: 40%;
+      width: 100vw;
       align-self: flex-end;
 
       >p.num3 {
@@ -149,4 +148,84 @@ div#maincont {
       left: 10;
     }
   }
+}
+
+/* Media Queries Begin Here*/
+
+
+@media (min-width: 768px) {
+  div#maincont {
+  h2 {
+    font-size: 5rem;
+    margin-left: 20%;
+  }
+
+  div.sidenav {
+    margin: 2rem;
+    transform: translateY(-50%);
+
+    a {
+      padding: .8rem 1rem;
+      font-size: .875rem;
+    }
+
+  }
+
+  div.firstimg {
+    background-image: url("/assets/images/IMG_9783-505.jpg");
+    height: 80vh;
+    width: 80%;
+  }
+/*
+  .firstimg::after {
+    content: "Yeah";
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    top: 97%;
+    left: 50%;
+    transform: scale(10);
+    z-index: 5454545;
+    background-size: cover;
+    //mix-blend-mode: difference;
+    mix-blend-mode: soft-light;
+  }
+*/
+  div.twoimgs {
+    height: 110vh;
+    display: flex;
+    clear: both;
+    justify-content: space-between;
+
+
+    .one {
+      background-image: url("/assets/images/IMG_9750-303.jpg");
+      background-position: left;
+      width: 40%;
+      align-self: flex-start
+    }
+/*
+    div.one::after {
+      content: "Yeah";
+      display: inline-block;
+      position: relative; 
+      color: green;
+      top: 97%;
+      left: 50%;
+      transform: scale(10);
+      background-size: contain;
+      mix-blend-mode: difference;
+    }
+*/
+    .two {
+      background-image: url("/assets/images/IMG_5888-101.jpg");
+      width: 40%;
+      align-self: flex-end;
+    }
+  }
+
+  div.lastimg {
+    background-image: url("/assets/images/IMG_9782-404.jpg");
+  }
+}
 }

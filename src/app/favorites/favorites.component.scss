@@ -1,6 +1,6 @@
 div#maincont {
   h2 {
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: bold;
     margin-left: 20%;
   }
@@ -25,18 +25,17 @@ div#maincont {
     float: left;
     display: flex;
     flex-direction: column;
-    margin: 2rem;
     height: 50vh;
     justify-content: space-between;
     position: fixed;
-    transform: translatey(-50%);
+    transform: translatey(-70%);
 
     a {
       color: #fff;
-      padding: .8rem 1rem;
+      padding: .8rem .8rem;
       writing-mode: vertical-lr;
       text-orientation: upright;
-      font-weight: 100;
+      font-weight:bold;
       font-size: .875rem;
 
       &:hover {
@@ -46,13 +45,11 @@ div#maincont {
 
   }
 
-  div.twoimg {
+  .twoimg {
     padding-left: 20%;
     margin-bottom: 5rem;
     height: 110vh;
-    clear: both;
-    display: flex;
-    justify-content: space-between;
+    display: flexbox;
 
     .one {
       background-image: url("/assets/images/GradPhotos_Prelim_/PreLim_Edits\ \(8\ of\ 34\).jpg");
@@ -60,8 +57,8 @@ div#maincont {
       background-position: center;
       border-radius: 10px;
       height: 50vh;
-      width: 45%;
-      align-self: flex-start;
+      width: 100%;
+      margin-bottom: 5rem;
 
       >p.num1 {
         position: absolute;
@@ -76,8 +73,7 @@ div#maincont {
       background-position: center;
       border-radius: 10px;
       height: 50vh;
-      width: 45%;
-      align-self: flex-end;
+      width: 100%;
 
       >p.num2 {
         position: absolute;
@@ -94,13 +90,61 @@ div#maincont {
     background-size: cover;
     border-radius: 10px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
     background-attachment: fixed;
 
     >p.num3 {
       position: absolute;
       bottom: 10;
       left: 10;
+    }
+  }
+}
+
+/* Media Queries Begin Here*/
+
+@media (min-width: 768px) {
+  div#maincont {
+    h2 {
+      font-size: 5rem;
+    }
+  
+    div.sidenav {
+      margin: 2rem;
+      height: 50vh;
+      transform: translatey(-50%);
+  
+      a {
+        padding: .8rem 1rem;
+        font-size: .875rem;
+      }
+  
+    }
+  
+    div.twoimg {
+      padding-left: 20%;
+      margin-bottom: 5rem;
+      height: 110vh;
+      clear: both;
+      display: flex;
+      justify-content: space-between;
+  
+      .one {
+        background-image: url("/assets/images/GradPhotos_Prelim_/PreLim_Edits\ \(8\ of\ 34\).jpg");
+        width: 45%;
+        align-self: flex-start;
+        margin-bottom: 0;
+      }
+  
+      .two {
+        background-image: url("/assets/images/GradPhotos_Prelim_/PreLim_Edits\ \(22\ of\ 34\).jpg");
+        width: 45%;
+        align-self: flex-end;
+      }
+    }
+  
+    div.lastimg {
+      background-image: url("/assets/images/IMG_9867-909.jpg");
     }
   }
 }
